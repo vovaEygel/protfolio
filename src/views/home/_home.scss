@@ -1,0 +1,46 @@
+@import 'animations';
+@import 'images';
+.home {
+    .section {
+        text-align: center;
+        padding: 50px 80px;
+    }
+    .section-light {
+        background-color: #f4f4f4;
+        color: #666;
+    }
+    .dark {
+        background-color: #282e34;
+        color: #ddd;
+    }
+    .free-text {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    .free-text {
+        .border {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+    .free-text {
+        .border.trans {
+            background-color: transparent;
+        }
+    }
+    @media(max-width:568px) {
+        .img1,
+        .img2,
+        .img3 {
+            background-attachment: scroll;
+        }
+    }
+}

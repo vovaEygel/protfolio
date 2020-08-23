@@ -1,0 +1,69 @@
+.navBar {
+    z-index: 9999;
+    max-width: 1240px;
+    z-index: 10000;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    @media #{$break2},
+    #{$break1} {
+        height: 100vh;
+        min-width: 200px;
+        display: flex;
+        position: fixed;
+        background-color: #292929;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin-top: 0;
+        flex-direction: column;
+        padding: 0;
+        box-shadow: -5px 0px 44px 7px rgba(0, 0, 0, 0.73);
+        opacity: 80%;
+        // transform: translate(120%, 0);
+        // transition: transform .8s;
+    }
+    .navLink {
+        text-align: center;
+        font-size: 18rem;
+        // padding: 8px 20px 8px;
+        padding: 10px;
+        margin-right: 10px;
+        min-width: 105px;
+        border: 1px solid #000000;
+        border-radius: 3px;
+        &:hover {
+            color: #65b300;
+            border: 1px solid #65b300;
+            border-radius: 3px;
+        }
+        @media #{$break2},
+        #{$break1} {
+            margin: 10px 10px 0;
+            min-width: 80px;
+            padding: 10px;
+        }
+    }
+    .navLinks {
+        @media #{$break2},
+        #{$break1} {
+            flex-direction: column;
+        }
+    }
+    .mobileNavBtn {
+        display: none;
+        position: relative;
+        top: 0px;
+        right: 0;
+        height: 40px;
+        width: 100%;
+        background-image: url('~@/styles/local/assets/icons/mobile-menu-btn.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        outline: none;
+        @media #{$break2},
+        #{$break1} {
+            display: inline;
+        }
+    }
+}

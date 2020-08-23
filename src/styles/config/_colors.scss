@@ -1,0 +1,32 @@
+$clr1:#306B34;
+$clr2:#8CBA80;
+$clr3:#F3FFC6;
+$clr4:#C3EB78;
+$clr5:#B6174B;
+//####################################################
+//menu-buttons
+//hue-saturation-lightness-alpha
+$btn-clr1: 0;
+$btn-clr1-light: hsla($btn-clr1, 50%, 75%, 100%);
+$btn-clr1-normal: hsla($btn-clr1, 50%, 50%, 100%);
+$btn-clr1-dark: hsla($btn-clr1, 50%, 35%, 100%);
+//####################################################
+$btn-clr2: 60;
+$btn-clr2-light: hsla($btn-clr2, 50%, 75%, 100%);
+$btn-clr2-normal: hsla($btn-clr2, 50%, 50%, 100%);
+$btn-clr2-dark: hsla($btn-clr2, 50%, 35%, 100%);
+//####################################################
+$btn-clr3: 120;
+$btn-clr3-light: hsla($btn-clr3, 50%, 75%, 100%);
+$btn-clr3-normal: hsla($btn-clr3, 50%, 50%, 100%);
+$btn-clr3-dark: hsla($btn-clr3, 50%, 35%, 100%);
+//####################################################
+$btn-clr4: 240;
+$btn-clr4-light: hsla($btn-clr4, 50%, 75%, 100%);
+$btn-clr4-normal: hsla($btn-clr4, 50%, 50%, 100%);
+$btn-clr4-dark: hsla($btn-clr4, 50%, 35%, 100%);
+//list color scheme
+$list-clr2: #1C5253;
+$list-clr3: #658E9C;
+$list-clr4: #4D5382;
+$list-clr5: #514663;
