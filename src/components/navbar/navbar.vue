@@ -2,8 +2,8 @@
   <div class="navBar">
     <div class="mobileNavBtn" @click="toggleMenu"></div>
     <nav class="navLinks flex">
-      <router-link class="navLink" to="/projects">Projects</router-link>
-      <router-link class="navLink" to="/contactMe">Contact Me</router-link>
+      <router-link class="navLink projects" to="/projects">Projects</router-link>
+      <router-link class="navLink contactMe" to="/contactMe">Contact Me</router-link>
     </nav>
   </div>
 </template>

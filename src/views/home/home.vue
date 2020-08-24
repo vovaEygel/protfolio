@@ -3,40 +3,41 @@
     <div class="img1">
       <div class="free-text">
         <transition appear name="fade">
-          <span class="border">My protfolio</span>
+          <span class="border">My protfolio + picture</span>
         </transition>
       </div>
     </div>
-    <!-- <section class="section dark">
-      <h2>Section One</h2>
-    </section>-->
     <div class="img2">
-      <div class="free-text">
-        <span class="border trans">Image Two Text</span>
+      <div class="text-container">
+        <p class="free-text">
+          I’m an enthusiastic junior full stack web developer who specializes in front-end technologies.
+          <br />highly motivated, capable of adapting to rapidly changing environments and
+          I’m an Independent learner and always ready to face new challenges. I’m skilled in writing single-page applications using the latest web technologies.
+        </p>
       </div>
     </div>
-    <!-- <section class="section dark">
-      <h2>Section Two</h2>
-    </section>-->
     <div class="img3">
       <div class="free-text">
-        <span class="border trans">Image Three Text</span>
+        <projects></projects>
       </div>
     </div>
-    <!-- <section class="section dark">
-      <h2>Section Three</h2>
-    </section>-->
     <div class="img1">
       <div class="free-text">
         <span class="border">Vladimir Eygel</span>
       </div>
     </div>
+    <section class="footer">
+      <h2>footer</h2>
+    </section>
   </section>
 </template>
 
 <script>
+import projects from "../projects/projects";
 export default {
   name: "Home",
-  components: {}
+  components: {
+    projects
+  }
 };
 </script>

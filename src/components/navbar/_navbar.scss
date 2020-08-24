@@ -26,17 +26,12 @@
     .navLink {
         text-align: center;
         font-size: 18rem;
-        // padding: 8px 20px 8px;
         padding: 10px;
         margin-right: 10px;
         min-width: 105px;
-        border: 1px solid #000000;
         border-radius: 3px;
-        &:hover {
-            color: #65b300;
-            border: 1px solid #65b300;
-            border-radius: 3px;
-        }
+        color: #65b300;
+        border: 1px solid #65b300;
         @media #{$break2},
         #{$break1} {
             margin: 10px 10px 0;
@@ -57,13 +52,24 @@
         right: 0;
         height: 40px;
         width: 100%;
-        background-image: url('~@/styles/local/assets/icons/mobile-menu-btn.svg');
+        margin: 10px -10px;
+        background-image: url('~@/styles/local/assets/icons/icons8-menu.svg');
         background-repeat: no-repeat;
         background-position: right;
         outline: none;
         @media #{$break2},
         #{$break1} {
             display: inline;
+            background-size: contain;
         }
     }
+    // .projects {
+    //     color: #d4bf00;
+    //     border-color: #d4bf00;
+    // }
+    // .contactMe,
+    // .projects {
+    //     color: #b60000;
+    //     border-color: #b60000;
+    // }
 }
