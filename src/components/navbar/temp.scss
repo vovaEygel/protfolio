@@ -1,0 +1,70 @@
+.navBar {
+    z-index: 9999;
+    max-width: 1240px;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    @media #{$break2},
+    #{$break1} {
+        height: 100vh;
+        min-width: 200px;
+        display: flex;
+        background-color: #292929;
+        top: 0;
+        flex-direction: column;
+        padding: 0;
+        box-shadow: -5px 0px 44px 7px rgba(0, 0, 0, 0.73);
+        opacity: 80%;
+        // transform: translate(120%, 0);
+        // transition: transform .8s;
+    }
+    .navLink {
+        text-align: center;
+        font-size: 18rem;
+        padding: 10px;
+        margin-right: 10px;
+        min-width: 105px;
+        border-radius: 3px;
+        color: #65b300;
+        border: 1px solid #65b300;
+        @media #{$break2},
+        #{$break1} {
+            margin: 10px 10px 0;
+            min-width: 80px;
+            padding: 10px;
+        }
+    }
+    .navLinks {
+        @media #{$break2},
+        #{$break1} {
+            flex-direction: column;
+        }
+    }
+    .mobileNavBtn {
+        display: none;
+        position: relative;
+        top: 0px;
+        right: 0;
+        height: 40px;
+        width: 100%;
+        margin: 10px -10px;
+        background-image: url('~@/styles/local/assets/icons/icons8-menu.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        outline: none;
+        @media #{$break2},
+        #{$break1} {
+            display: flex;
+            background-size: contain;
+        }
+    }
+    // .projects {
+    //     color: #d4bf00;
+    //     border-color: #d4bf00;
+    // }
+    // .contactMe,
+    // .projects {
+    //     color: #b60000;
+    //     border-color: #b60000;
+    // }
+}

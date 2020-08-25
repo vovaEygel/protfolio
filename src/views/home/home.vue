@@ -2,9 +2,7 @@
   <section class="home">
     <div class="img1">
       <div class="free-text">
-        <transition appear name="fade">
-          <span class="border">My protfolio + picture</span>
-        </transition>
+        <transition appear name="fade"></transition>
       </div>
     </div>
     <div class="img2">
@@ -19,6 +17,7 @@
     <div class="img3">
       <div class="free-text">
         <projects></projects>
+        <tech></tech>
       </div>
     </div>
     <div class="img1">
@@ -34,10 +33,12 @@
 
 <script>
 import projects from "../projects/projects";
+import tech from "../../components/tech/tech";
 export default {
   name: "Home",
   components: {
-    projects
+    projects,
+    tech
   }
 };
 </script>
