@@ -1,3 +1,19 @@
+.tech {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    padding: 30px;
+    @media #{$break2},
+    #{$break1} {
+        overflow: auto;
+    }
+}
+
+.icon {
+    margin: 0 auto;
+}
+
 .vue,
 .react,
 .node,
@@ -10,30 +26,57 @@
 .sass,
 .git,
 .adobexd {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.vue {}
+.vue {
+    background-image: url('~@/styles/local/assets/icons/icons8-vue-js.svg');
+}
 
-.react {}
+.react {
+    background-image: url('~@/styles/local/assets/icons/icons8-react.svg');
+}
 
-.node {}
+.node {
+    background-image: url('~@/styles/local/assets/icons/icons8-nodejs.svg');
+}
 
-.mongodb {}
+.mongodb {
+    background-image: url('~@/styles/local/assets/icons/icons8-mongodb.svg');
+}
 
-.js {}
+.js {
+    background-image: url('~@/styles/local/assets/icons/icons8-javascript.svg');
+}
 
-.redux {}
+.redux {
+    background-image: url('~@/styles/local/assets/icons/icons8-redux.svg');
+}
 
-.css3 {}
+.css3 {
+    background-image: url('~@/styles/local/assets/icons/icons8-css3.svg');
+}
 
-.html5 {}
+.html5 {
+    background-image: url('~@/styles/local/assets/icons/icons8-html-5.svg');
+}
 
-.mssql {}
+.mssql {
+    background-image: url('~@/styles/local/assets/icons/icons8-microsoft-sql-server.svg');
+}
 
-.sass {}
+.sass {
+    background-image: url('~@/styles/local/assets/icons/icons8-sass.svg');
+}
 
-.git {}
+.git {
+    background-image: url('~@/styles/local/assets/icons/icons8-git.svg');
+}
 
-.adobexd {}
+.adobexd {
+    background-image: url('~@/styles/local/assets/icons/icons8-adobe-xd.svg');
+}

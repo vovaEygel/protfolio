@@ -1,7 +1,14 @@
 <template>
-  <section class="projects container"></section>
+  <section class="projects container">
+    <!-- <tech></tech> -->
+  </section>
 </template>
 
 <script>
-export default {};
+// import tech from "../../components/tech/tech";
+export default {
+  components: {
+    // tech
+  }
+};
 </script>

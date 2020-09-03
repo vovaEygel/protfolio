@@ -26,7 +26,7 @@
       </div>
     </div>
     <section class="footer">
-      <h2>footer</h2>
+      <!-- <h2>footer</h2> -->
     </section>
   </section>
 </template>
