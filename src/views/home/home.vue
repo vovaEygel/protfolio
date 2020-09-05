@@ -16,7 +16,12 @@
     </div>
     <div class="img3">
       <div class="free-text">
-        <projects></projects>
+        <!-- <contactMe></contactMe> -->
+      </div>
+    </div>
+    <div class="img4">
+      <div class="free-text">
+        <!-- <projects></projects> -->
         <tech></tech>
       </div>
     </div>
@@ -25,19 +30,19 @@
         <span class="border">Vladimir Eygel</span>
       </div>
     </div>
-    <section class="footer">
-      <!-- <h2>footer</h2> -->
-    </section>
   </section>
 </template>
 
 <script>
-import projects from "../projects/projects";
+// import projects from "../projects/projects";
 import tech from "../../components/tech/tech";
+// import contactMe from "../../views/contactMe/contactMe";
+
 export default {
   name: "Home",
   components: {
-    projects,
+    // projects,
+    // contactMe,
     tech
   }
 };

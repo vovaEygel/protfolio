@@ -16,7 +16,7 @@
             flex-direction: column;
             padding: 0;
             box-shadow: -5px 0px 44px 7px rgba(0, 0, 0, 0.73);
-            // opacity: 80%;
+            opacity: 0.8;
             transform: translate(120%, 0);
             transition: transform .8s;
         }
@@ -27,8 +27,8 @@
             margin-right: 10px;
             min-width: 105px;
             border-radius: 3px;
-            color: #65b300;
-            border: 1px solid #65b300;
+            color: #0ec1f8;
+            border: 1px solid #0ec1f8;
             @media #{$break2},
             #{$break1} {
                 margin: 10px 10px 0;

@@ -1,0 +1,29 @@
+.socials {
+    margin: 0 auto;
+    padding: 65px;
+    justify-content: center;
+    .footer-icon {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.linkedin {
+    background-image: url('~@/styles/local/assets/icons/linkedin.svg');
+}
+
+.facebook {
+    background-image: url('~@/styles/local/assets/icons/facebook.svg');
+}
+
+.instagram {
+    background-image: url('~@/styles/local/assets/icons/instagram.svg');
+}
+
+.gmail {
+    background-image: url('~@/styles/local/assets/icons/gmail.svg');
+}
