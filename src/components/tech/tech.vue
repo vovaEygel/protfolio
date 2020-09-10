@@ -1,5 +1,5 @@
 <template>
-  <div class="tech">
+  <div class="tech container">
     <div class="icon vue">.</div>
     <div class="icon react"></div>
     <div class="icon node"></div>

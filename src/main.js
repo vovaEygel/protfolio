@@ -3,6 +3,8 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+import VueSmoothScroll from 'vue2-smooth-scroll'
+Vue.use(VueSmoothScroll)
 Vue.config.productionTip = false;
 import './styles/protfolio.scss';
 new Vue({

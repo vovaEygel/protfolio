@@ -1,14 +1,26 @@
 <template>
-  <section class="projects container">
-    <!-- <tech></tech> -->
+  <section class="projects-view container" id="projects">
+    <div class="project"></div>
+    <div class="project"></div>
+    <div class="project"></div>
+    <div class="project"></div>
   </section>
 </template>
 
 <script>
-// import tech from "../../components/tech/tech";
 export default {
-  components: {
-    // tech
+  data() {
+    return {
+      projects: [
+        { minesweaper: { tech: ["javascript", "html", "css"] } },
+        { memegen: { tech: ["javascript", "html", "css"] } },
+        { appsus: { tech: ["vue", "javascript", "css"] } },
+        { trend: { tech: ["vue", "node", "sass"] } }
+      ]
+    };
   }
 };
 </script>
+
+
+

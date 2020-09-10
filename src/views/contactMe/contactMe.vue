@@ -1,17 +1,46 @@
 <template>
-  <div class="contactMe container">
-    <form class="flex" action>
-      <input type="text" name="name" placeholder="name" />
-      <input type="text" name="email" placeholder="email" />
-      <input type="text" name="subject" placeholder="subject" />
-      <textarea placeholder="message" name="message" id cols="30" rows="10"></textarea>
+  <div class="contact-form" id="contactMe">
+    <form class="form" @submit="onSubmit">
+      <input
+        required
+        name="name"
+        v-model="contact.name"
+        placeholder="Name"
+        type="text"
+        autocomplete="off"
+      />
+      <input
+        required
+        name="email"
+        v-model="contact.email"
+        placeholder="E-mail"
+        type="email"
+        autocomplete="off"
+      />
+      <textarea name="message" v-model="contact.message" rows="4" placeholder="Message"></textarea>
+      <button class="button">Send</button>
     </form>
   </div>
 </template>
 
 <script>
-export default {};
-</script>
+export default {
+  data() {
+    return {
+      contact: {
+        name: "",
+        email: "",
+        message: ""
+      },
+      isSending: false
+    };
+  },
 
-<style lang="scss" scoped>
-</style>
+  methods: {
+    onSubmit(evt) {
+      evt.preventDefault();
+      this.isSending = true;
+    }
+  }
+};
+</script>

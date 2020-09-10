@@ -24,6 +24,10 @@
     }
 }
 
+.smaller {
+    height: auto;
+}
+
 //=======================================================
 .img2 {
     position: relative;
@@ -44,7 +48,7 @@
         .free-text {
             color: white;
             position: relative;
-            z-index: 1;
+            // z-index: 1;
         }
     }
 }

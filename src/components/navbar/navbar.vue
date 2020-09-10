@@ -4,8 +4,22 @@
     <div class="navBar" @click="toggleMenu" :class="{showen: menuToggler}">
       <!-- <div :class="{showen: menuToggler}" @click="toggleMenu" class="screen"></div> -->
       <nav class="navLinks flex">
-        <router-link class="navLink projects" to="/projects">Projects</router-link>
-        <router-link class="navLink contactMe" to="/contactMe">Contact Me</router-link>
+        <a
+          class="navLink"
+          :to="'/#projects'"
+          @click.native="scrollFix('#scroll')"
+          exact
+          v-smooth-scroll
+          href="#projects"
+        >Projects</a>
+        <a
+          class="navLink"
+          :to="'/#contactMe'"
+          @click.native="scrollFix('#scroll')"
+          exact
+          href="#contactMe"
+          v-smooth-scroll
+        >Contact me</a>
       </nav>
       <div class="screen" @click="toggleMenu"></div>
     </div>
@@ -23,7 +37,10 @@ export default {
   methods: {
     toggleMenu() {
       this.menuToggler = !this.menuToggler;
+    },
+    scrollFix: function(hash) {
+      location.hash = hash;
     }
   }
 };
-</script>>
+</script>
