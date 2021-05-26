@@ -1,24 +1,15 @@
 <template>
   <section class="projects-view container" id="projects">
-    <div class="project"></div>
-    <div class="project"></div>
-    <div class="project"></div>
-    <div class="project"></div>
+    <div class="project minesweaper"></div>
+    <div class="project memegen"></div>
+    <div class="project appsus"></div>
+    <div class="project trend"></div>
   </section>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      projects: [
-        { minesweaper: { tech: ["javascript", "html", "css"] } },
-        { memegen: { tech: ["javascript", "html", "css"] } },
-        { appsus: { tech: ["vue", "javascript", "css"] } },
-        { trend: { tech: ["vue", "node", "sass"] } }
-      ]
-    };
-  }
+  name: "projects"
 };
 </script>
 
