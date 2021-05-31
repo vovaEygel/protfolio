@@ -1,6 +1,6 @@
 <template>
   <div class="contact-form" id="contactMe">
-    <form class="form" @submit="onSubmit">
+    <form target="_blank" action="https://formsubmit.co/vleygel@gmail.com" method="POST" class="form" @submit="onSubmit">
       <input
         required
         name="name"
@@ -18,7 +18,7 @@
         autocomplete="off"
       />
       <textarea name="message" v-model="contact.message" rows="4" placeholder="Message"></textarea>
-      <button class="button">Send</button>
+      <button type="submit" class="button">Send</button>
     </form>
   </div>
 </template>
@@ -28,9 +28,9 @@ export default {
   data() {
     return {
       contact: {
-        name: "",
-        email: "",
-        message: ""
+        name:'',
+        email:'',
+        message:''
       },
       isSending: false
     };
@@ -40,6 +40,14 @@ export default {
     onSubmit(evt) {
       evt.preventDefault();
       this.isSending = true;
+      console.log(this.contact)
+      this.clearForm()
+
+    },
+    clearForm(){
+      this.contact.name = '';
+      this.contact.email = '';
+      this.contact.message = '';
     }
   }
 };
